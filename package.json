@@ -1,0 +1,22 @@
+{
+  "name": "nodejs-cloud-functions-tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial on how to deploy a GCP cloud function using Node.js with ESM",
+  "exports": "./index.js",
+  "type": "module",
+  "scripts": {
+    "deploy": "gcloud functions deploy hello-node-function --gen2 --runtime=nodejs18 --region=europe-west3 --source=. --entry-point=helloGCP --set-secrets=CONFIG_KEY=projects/506442169972/secrets/CONFIG_KEY:latest --trigger-http --allow-unauthenticated"
+  },
+  "author": "tsmx <dev@tsmx.net>",
+  "license": "MIT",
+  "keywords": [
+    "NodeJS",
+    "ESM",
+    "GCP",
+    "gcloud",
+    "cloud-functions",
+    "serverless",
+    "deploy",
+    "update"
+  ]
+}
