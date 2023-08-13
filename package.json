@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-cloud-functions-tutorial",
+  "name": "secure-config-cloud-function",
   "version": "1.0.0",
   "description": "Tutorial on how to create a GCP cloud function using Node.js (ESM) with secure-config and Secret Manager.",
   "exports": "./index.js",
@@ -13,6 +13,8 @@
     "NodeJS",
     "ESM",
     "GCP",
+    "secure-config",
+    "Secret Manager",
     "gcloud",
     "cloud-functions",
     "serverless",
