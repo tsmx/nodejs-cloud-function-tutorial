@@ -1,5 +1,5 @@
-# Creating a GCP cloud function with Node.js
+# Creating a GCP cloud function using secure-config and Secret Manager
 
-> Tutorial for creating a [GCP cloud function](https://cloud.google.com/functions/docs/concepts/overview) in Node.js (ESM) and deploying it using the gcloud CLI.
+> Tutorial on how to create a [GCP cloud function](https://cloud.google.com/functions/docs/concepts/overview) using Node.js (ESM) with [secure-config](https://www.npmjs.com/package/@tsmx/secure-config) and Secret Manager.
 
 **More information coming soon...**
