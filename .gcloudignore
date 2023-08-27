@@ -15,3 +15,7 @@
 
 node_modules
 #!include:.gitignore
+
+# don't upload non-production configurations
+conf/*
+!conf/config-production.json
