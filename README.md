@@ -78,7 +78,7 @@ That's it. The cloud function will now receive the key and the configuration val
 
 ## Summary
 
-Following this tutorial we now have a convenient configuration managament for a cloud fcuntion in GCP. 
+Following this tutorial we now have a convenient configuration managament for a GCP cloud function. 
 - No secret is exposed in the code
 - Minimum dependency on the cloud provider with only one environment variable supplied
 - Full feature-set of JSON available in the configuration design (structuring, array, etc.)
