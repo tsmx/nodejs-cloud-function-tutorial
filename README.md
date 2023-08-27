@@ -64,7 +64,7 @@ conf/*
 
 **Note:** GCP will by default set `NODE_ENV=production`, see [this article](https://tsmx.net/nodejs-env-vars-in-gcp-cloud-functions-and-app-engine/) for more details on the default env vars. 
 
-Make also sure not to push any sensible data to your GitHub repo by changing `.gitignore` accordingly.
+Make also sure not to push any sensible data to your GitHub repo by changing `.gitignore` accordingly. In this tutorial the unencrypted configuration file is only added for demonstration purposes.
 
 ### Using GCP Secret Manager to securely serve the encryption key
 
