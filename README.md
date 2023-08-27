@@ -24,7 +24,7 @@ Install the [secure-config](https://www.npmjs.com/package/@tsmx/secure-config) p
 npm install @tsmx/secure-config --save
 ```
 
-Having this, create a `conf` subfolder in your project with the configuration files. In the turoial we'll create two files, one for local testing purposes without any encrpytion and a production version which will be used in GCP with an encrypted secret.
+Having this, create a `conf` subfolder in your project with the configuration files. In the tutorial we'll create two files, one for local testing purposes without any encrpytion and a production version which will be used in GCP with an encrypted secret.
 
 The unencrypted config file will be `conf/config.json` with the following simple content:
 
@@ -75,6 +75,10 @@ To securely serve this key to the cloud function, GCP Secret Manager can be used
 - Pass on the created secret as the `CONFIG_ENCRYPTION_KEY` environment variable to the cloud fucntion by adding `--set-secrets=CONFIG_ENCRYPTION_KEY=projects/[PROJECT-ID]/secrets/CONFIG_KEY:latest` to `gcloud functions deploy` (see package.json for a complete example call)
 
 That's it. The cloud function will now receive the key and the configuration values can be decrypted.
+
+## Summary
+
+Following this tutorial we now have a convenient configuration managament for a cloud fcuntion in GCP. 
 - No secret is exposed in the code
 - Minimum dependency on the cloud provider with only one environment variable supplied
 - Full feature-set of JSON available in the configuration design (structuring, array, etc.)
