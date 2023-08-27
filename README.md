@@ -78,6 +78,8 @@ To securely serve this key to the cloud function, GCP Secret Manager can be used
 
 That's it. The cloud function will now receive the key and the configuration values can be decrypted.
 
+Too see it in action, simply call the provided [secure-config cloud function](https://europe-west3-tsmx-gcp.cloudfunctions.net/secure-config-function).
+
 ## Summary
 
 Following this tutorial we now have a convenient configuration managament for a GCP cloud function. 
